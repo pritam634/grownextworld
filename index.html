@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- favicon -->
+
+  <!-- favicon end -->
+
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Waypoints -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <!-- Counter Up -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  <title>Grownextworld Pvt Ltd - Home</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gnBlue: '#00AEEF',
+            gnBlueDark: '#007DB8',
+            gnBlueLight: '#33C3F5',
+            gnDark: '#1A1A1A',
+            gnDarker: '#111111',
+            gnGray: '#2A2A2A',
+            gnCard: '#1E2530',
+            gnBorder: '#2E3A48',
+            gnText: '#B0C4D8',
+          },
+          fontFamily: {
+            display: ['Orbitron', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            heading: ['Space Grotesk', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Arrow button to top -->
+   <div id="arrowBtn" class="hidden fixed bottom-10 right-10 z-50">
+    <button
+      class="bg-gradient-to-r from-gnBlue to-cyan-400 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 hover:shadow-cyan-500/40 transition duration-300">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+
+  <header class="fixed  top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <nav
+        class="bg-[#161B22]/95 backdrop-blur-xl border border-white/10 rounded-2xl px-8 py-3 shadow-2xl flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3">
+
+          <img src="./assets/img/logo/main_logo.png"
+            class="h-14 object-contain transition duration-300 hover:scale-105">
+
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex items-center gap-10">
+
+          <li>
+            <a href="index.html" class="relative text-white font-medium hover:text-gnBlue transition group">
+              Home
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-gnBlue transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html" class="relative text-white font-medium hover:text-gnBlue transition group">
+              About
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-gnBlue transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li class="relative group">
+
+            <button class="flex items-center gap-2 text-white font-medium hover:text-gnBlue transition">
+
+              Courses
+
+              <i class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition duration-300"></i>
+
+            </button>
+
+            <!-- Dropdown -->
+            <div
+              class="absolute left-0 mt-6 w-56 bg-[#161B22]/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+              <a href="#"
+                class="block px-5 py-3 text-gray-300 hover:text-white hover:bg-gnBlue/20 rounded-t-xl transition">
+                Web Development
+              </a>
+
+              <a href="#" class="block px-5 py-3 text-gray-300 hover:text-white hover:bg-gnBlue/20 transition">
+                Digital Marketing
+              </a>
+
+              <a href="#" class="block px-5 py-3 text-gray-300 hover:text-white hover:bg-gnBlue/20 transition">
+                Graphic Design
+              </a>
+
+              <a href="#"
+                class="block px-5 py-3 text-gray-300 hover:text-white hover:bg-gnBlue/20 rounded-b-xl transition">
+                View All
+              </a>
+
+            </div>
+
+          </li>
+
+          <li>
+            <a href="blog.html" class="relative text-white font-medium hover:text-gnBlue transition group">
+              Blog
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-gnBlue transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="relative text-white font-medium hover:text-gnBlue transition group">
+              Contact
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-gnBlue transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- Right Buttons -->
+        <div class="hidden lg:flex items-center gap-5">
+
+          <a href="login.html" class="text-white font-medium hover:text-gnBlue transition">
+            Login
+          </a>
+
+          <a href="register.html"
+            class="bg-gradient-to-r from-gnBlue to-cyan-400 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 hover:shadow-cyan-500/40 transition duration-300">
+
+            Get Started
+
+          </a>
+
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="lg:hidden text-white text-2xl">
+
+          <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu"
+        class="hidden lg:hidden mt-3 bg-[#161B22]/95 backdrop-blur-xl rounded-2xl border border-white/10 shadow-xl">
+
+        <a href="index.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          Home
+        </a>
+
+        <a href="about.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          About
+        </a>
+
+        <a href="courses.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          Courses
+        </a>
+
+        <a href="blog.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          Blog
+        </a>
+
+        <a href="contact.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          Contact
+        </a>
+
+        <div class="px-6 py-5">
+
+          <a href="login.html"
+            class="block text-center bg-gradient-to-r from-gnBlue to-cyan-400 rounded-full py-3 font-semibold text-white">
+
+            Login
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="hero" class="relative h-screen overflow-hidden">
+
+    <div class="swiper heroSwiper h-full">
+
+      <div class="swiper-wrapper">
+
+        <!-- ================= Slide 1 ================= -->
+
+        <div class="swiper-slide">
+
+          <div class="relative h-full bg-gradient-to-r from-[#06131F] via-[#0A1F36] to-[#003B63]">
+
+            <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="max-w-7xl mx-auto px-6 h-full relative z-10">
+
+              <div class="grid lg:grid-cols-2 items-center h-full gap-10">
+
+                <!-- Left -->
+
+                <div>
+
+                  <h1 class="text-5xl mt-20 lg:text-7xl font-bold text-white leading-tight">
+
+                    Learn Today.
+
+                    <span class="text-cyan-400">
+
+                      Earn Tomorrow.
+
+                    </span>
+
+                    Grow Forever.
+
+                  </h1>
+
+                  <p class="mt-8 text-gray-300 text-xl leading-9 max-w-xl">
+
+                    Build your career with Industry Experts. Learn Web Development, AI,
+                    Digital Marketing, Graphic Design, Programming and much more through
+                    practical projects.
+
+                  </p>
+
+                  <div class="flex flex-wrap gap-5 mt-10">
+
+                    <a href="#courses"
+                      class="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold transition duration-300 shadow-xl">
+
+                      Explore Courses
+
+                    </a>
+
+                  </div>
+
+                  <!-- Stats -->
+
+                  <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+
+                    <div>
+
+                      <h2 class="text-4xl font-bold text-cyan-400">
+
+                        15K+
+
+                      </h2>
+
+                      <p class="text-gray-400">
+
+                        Students
+
+                      </p>
+
+                    </div>
+
+                    <div>
+
+                      <h2 class="text-4xl font-bold text-cyan-400">
+
+                        100+
+
+                      </h2>
+
+                      <p class="text-gray-400">
+
+                        Courses
+
+                      </p>
+
+                    </div>
+
+                    <div>
+
+                      <h2 class="text-4xl font-bold text-cyan-400">
+
+                        50+
+
+                      </h2>
+
+                      <p class="text-gray-400">
+
+                        Mentors
+
+                      </p>
+
+                    </div>
+
+                    <div>
+
+                      <h2 class="text-4xl font-bold text-cyan-400">
+
+                        4.9★
+
+                      </h2>
+
+                      <p class="text-gray-400">
+
+                        Rating
+
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <!-- Right -->
+
+                <div class="hidden lg:flex justify-center">
+
+                  <div class="bg-white/10 backdrop-blur-xl rounded-3xl border border-white/10 p-6 shadow-2xl">
+
+                    <img src="assets/img/banner/banner1.png" class="w-full max-w-lg animate-bounce" alt="Hero">
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ================= Slide 2 ================= -->
+
+        <div class="swiper-slide">
+
+          <div class="relative h-full bg-gradient-to-r from-[#051E3A] via-[#003F5C] to-[#0086D1]">
+
+            <div class="absolute inset-0 bg-black/40"></div>
+
+            <div class="max-w-7xl mx-auto px-6 h-full relative z-10">
+
+              <div class="grid lg:grid-cols-2 items-center h-full">
+
+                <div>
+
+                  <span class="text-cyan-300 font-semibold">
+
+                    Future Ready Skills
+
+                  </span>
+
+                  <h1 class="text-6xl font-bold text-white mt-5">
+
+                    Become Job Ready
+
+                    <span class="text-cyan-400">
+
+                      Faster
+
+                    </span>
+
+                  </h1>
+
+                  <p class="mt-8 text-gray-300 text-xl">
+
+                    Learn through Live Classes, Real Projects,
+                    Certifications and Placement Support.
+
+                  </p>
+
+                  <a href="#"
+                    class="inline-block mt-10 bg-cyan-500 hover:bg-cyan-600 px-8 py-4 rounded-full text-white font-semibold">
+
+                    Start Learning
+
+                  </a>
+
+                </div>
+
+                <div class="hidden lg:flex justify-center">
+
+                  <img src="assets/img/banner/banner2.png" class="w-full max-w-lg" alt="">
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ================= Slide 3 ================= -->
+
+        <div class="swiper-slide">
+
+          <div class="relative h-full bg-gradient-to-r from-[#021B2F] via-[#072D54] to-[#005EA8]">
+
+            <div class="absolute inset-0 bg-black/50"></div>
+
+            <div class="max-w-7xl mx-auto px-6 h-full relative z-10">
+
+              <div class="grid lg:grid-cols-2 items-center h-full">
+
+                <div>
+
+                  <span class="text-cyan-300 font-semibold">
+
+                    Skills For Your Future
+
+                  </span>
+
+                  <h1 class="text-6xl font-bold text-white mt-5">
+
+                    Master
+
+                    <span class="text-cyan-400">
+
+                      Trending Skills
+
+                    </span>
+                    Shape your future
+
+                  </h1>
+
+                  <p class="mt-8 text-gray-300 text-xl">
+
+                    Master SaaS, AI, Automation, Sales Funnels,
+                    Web Development and Business Growth.
+
+                  </p>
+
+                  <a href="#"
+                    class="inline-block mt-10 bg-cyan-500 hover:bg-cyan-600 px-8 py-4 rounded-full text-white font-semibold">
+
+                    Join Now
+
+                  </a>
+
+                </div>
+
+                <div class="hidden lg:flex justify-center">
+
+                  <img src="assets/img/banner/banner3.png" class="w-full max-w-lg" alt="">
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Navigation -->
+
+      <div class="swiper-button-next text-white"></div>
+
+      <div class="swiper-button-prev text-white"></div>
+
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </section>
+
+
+  
+  <!-- ================= ABOUT GROWNEXTWORLD ================= -->
+
+  <section class="py-24 bg-[#0B1120] relative overflow-hidden">
+
+    <!-- Background Blur -->
+    <div class="absolute -top-24 -left-24 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Left Content -->
+        <div>
+
+          <span
+            class="inline-flex items-center gap-2 bg-cyan-500/10 text-cyan-400 px-5 py-2 rounded-full border border-cyan-500/20 text-sm font-medium">
+
+            <i class="fa-solid fa-rocket"></i> About GrowNextWorld
+
+          </span>
+
+          <h2 class="mt-6 text-4xl lg:text-5xl font-bold text-white leading-tight">
+
+            Learn, Earn & Grow
+            <span class="text-cyan-400">With GrowNextWorld</span>
+
+          </h2>
+
+          <p class="mt-6 text-lg text-gray-300 leading-8">
+
+            <strong>GrowNextWorld</strong> is dedicated to providing
+            high-quality education and income-generating opportunities
+            to individuals worldwide. Our mission is to empower students,
+            professionals, entrepreneurs, and freelancers with practical,
+            industry-focused skills that help them succeed in today's
+            digital world.
+
+          </p>
+
+          <p class="mt-5 text-gray-400 leading-8">
+
+            We offer expert-led training in Web Development, Artificial
+            Intelligence, Digital Marketing, Graphic Design, Programming,
+            Business Development, and emerging technologies. Through
+            live classes, hands-on projects, certifications, and career
+            support, we bridge the gap between learning and real-world
+            success.
+
+          </p>
+
+          <!-- Features -->
+
+          <div class="grid grid-cols-2 gap-5 mt-10">
+
+            <div class="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-cyan-400 transition">
+
+              <div class="text-cyan-400 text-3xl mb-3">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+
+              <h4 class="text-white font-semibold">
+
+                Expert Mentors
+
+              </h4>
+
+              <p class="text-gray-400 text-sm mt-2">
+
+                Learn from experienced industry professionals.
+
+              </p>
+
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-cyan-400 transition">
+
+              <div class="text-cyan-400 text-3xl mb-3">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+
+              <h4 class="text-white font-semibold">
+
+                Career Support
+
+              </h4>
+
+              <p class="text-gray-400 text-sm mt-2">
+
+                Internship & placement assistance.
+
+              </p>
+
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-cyan-400 transition">
+
+              <div class="text-cyan-400 text-3xl mb-3">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+
+              <h4 class="text-white font-semibold">
+
+                Global Learning
+
+              </h4>
+
+              <p class="text-gray-400 text-sm mt-2">
+
+                Accessible education for everyone.
+
+              </p>
+
+            </div>
+
+            <div class="bg-white/5 border border-white/10 rounded-xl p-5 hover:border-cyan-400 transition">
+
+              <div class="text-cyan-400 text-3xl mb-3">
+                <i class="fa-solid fa-handshake"></i>
+              </div>
+
+              <h4 class="text-white font-semibold">
+
+                Practical Skills
+
+              </h4>
+
+              <p class="text-gray-400 text-sm mt-2">
+
+                Learn through real-world projects.
+
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- Button -->
+
+          <div class="mt-10">
+
+            <a href="about.html"
+              class="inline-flex items-center gap-3 bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-4 rounded-full font-semibold transition duration-300 shadow-lg">
+
+              Learn More
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Right Video -->
+
+        <div class="relative group">
+
+          <div
+            class="rounded-3xl overflow-hidden bg-white/5 backdrop-blur-xl border border-cyan-500/20 shadow-2xl transition duration-500 group-hover:scale-[1.02]">
+
+            <div class="aspect-video">
+
+              <iframe class="w-full h-full" src="https://www.youtube.com/embed/AAQ4v0UE6y8?rel=0"
+                title="GrowNextWorld Introduction" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+
+            </div>
+
+          </div>
+
+          <!-- Floating Badge -->
+          <div class="absolute -bottom-5 left-6 bg-cyan-500 text-white px-5 py-3 rounded-2xl shadow-xl">
+
+            <p class="text-sm font-medium"><i class="fa-solid fa-play"></i> Watch Our Story</p>
+            <h4 class="text-xl font-bold">GrowNextWorld</h4>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =======================================================
+        FEATURED COURSES SECTION
+======================================================== -->
+
+  <section class="py-24 bg-[#0B1120] relative overflow-hidden">
+
+    <!-- Background Blur -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-cyan-500/10 rounded-full blur-[150px]"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-600/10 rounded-full blur-[150px]"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Section Heading -->
+
+      <div class="text-center mb-16">
+
+        <span
+          class="inline-block px-5 py-2 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-400 font-medium">
+
+          <i class="fa-solid fa-star"></i> FEATURED COURSES
+
+        </span>
+
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mt-5">
+
+          Transform Your Skills With
+
+          <span class="text-cyan-400">
+
+            GrowNextWorld
+
+          </span>
+
+        </h2>
+
+        <p class="text-gray-400 mt-5 max-w-3xl mx-auto">
+
+          Learn practical skills from industry experts through live classes,
+          real-world projects, certification, and career guidance.
+
+        </p>
+
+      </div>
+
+
+
+      <!-- Course Grid -->
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+
+        <!-- ================= CARD ================= -->
+
+        <div
+          class="group rounded-3xl overflow-hidden bg-gradient-to-br from-purple-700 via-fuchsia-600 to-violet-700 shadow-2xl transition duration-500 hover:-translate-y-4 hover:shadow-cyan-500/20">
+
+          <!-- Top -->
+
+          <div class="p-8 text-center">
+
+            <img src="assets/img/course/basic.png" class="h-48 mx-auto transition duration-500 group-hover:scale-110"
+              alt="">
+
+            <h3 class="text-3xl font-bold text-white mt-8">
+
+              Basic Package
+
+            </h3>
+
+            <div class="flex justify-center mt-3 text-yellow-300">
+
+              ★★★★★
+
+            </div>
+
+            <p class="text-purple-100 mt-2">
+
+              1,250+ Students
+
+            </p>
+
+          </div>
+
+          <!-- Skills -->
+
+          <div class="px-8">
+
+            <div class="flex flex-wrap justify-center gap-2">
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Canva
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Photoshop
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Video Editing
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                AI Tools
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- Bottom -->
+
+          <div class="p-8">
+
+            <div class="flex justify-between items-center">
+
+              <div>
+
+                <span class="line-through text-purple-200">
+
+                  ₹2,999
+
+                </span>
+
+                <h3 class="text-4xl font-bold text-white">
+
+                  ₹1,740
+
+                </h3>
+
+              </div>
+
+              <a href="#"
+                class="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-white transition">
+
+                Enroll Now →
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= CARD ================= -->
+
+        <div
+          class="group rounded-3xl overflow-hidden bg-gradient-to-br from-cyan-600 via-sky-600 to-blue-700 shadow-2xl transition duration-500 hover:-translate-y-4 hover:shadow-cyan-500/20">
+
+          <div class="p-8 text-center">
+
+            <img src="assets/img/course/advance.png" class="h-48 mx-auto transition duration-500 group-hover:scale-110">
+
+            <h3 class="text-3xl font-bold text-white mt-8">
+
+              Advance Package
+
+            </h3>
+
+            <div class="flex justify-center mt-3 text-yellow-300">
+
+              ★★★★★
+
+            </div>
+
+            <p class="text-cyan-100 mt-2">
+
+              980+ Students
+
+            </p>
+
+          </div>
+
+          <div class="px-8">
+
+            <div class="flex flex-wrap justify-center gap-2">
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Web Development
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                React
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                PHP
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                AI
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="p-8">
+
+            <div class="flex justify-between items-center">
+
+              <div>
+
+                <span class="line-through text-cyan-200">
+
+                  ₹4,999
+
+                </span>
+
+                <h3 class="text-4xl font-bold text-white">
+
+                  ₹2,820
+
+                </h3>
+
+              </div>
+
+              <a href="#"
+                class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-white transition">
+
+                Enroll Now →
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= CARD ================= -->
+
+        <div
+          class="group rounded-3xl overflow-hidden bg-gradient-to-br from-pink-600 via-purple-700 to-indigo-700 shadow-2xl transition duration-500 hover:-translate-y-4 hover:shadow-pink-500/20">
+
+          <div class="p-8 text-center">
+
+            <img src="assets/img/course/pro.png" class="h-48 mx-auto transition duration-500 group-hover:scale-110">
+
+            <h3 class="text-3xl font-bold text-white mt-8">
+
+              Pro Package
+
+            </h3>
+
+            <div class="flex justify-center mt-3 text-yellow-300">
+
+              ★★★★★
+
+            </div>
+
+            <p class="text-pink-100 mt-2">
+
+              600+ Students
+
+            </p>
+
+          </div>
+
+          <div class="px-8">
+
+            <div class="flex flex-wrap justify-center gap-2">
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Full Stack
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                SEO
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Ads
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Automation
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="p-8">
+
+            <div class="flex justify-between items-center">
+
+              <div>
+
+                <span class="line-through text-pink-200">
+
+                  ₹7,999
+
+                </span>
+
+                <h3 class="text-4xl font-bold text-white">
+
+                  ₹4,200
+
+                </h3>
+
+              </div>
+
+              <a href="#"
+                class="bg-white text-purple-700 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-white transition">
+
+                Enroll Now →
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- ================= MASTER PACKAGE ================= -->
+
+        <div
+          class="group rounded-3xl overflow-hidden bg-gradient-to-br from-emerald-600 via-teal-600 to-cyan-700 shadow-2xl transition duration-500 hover:-translate-y-4 hover:shadow-emerald-500/20">
+
+          <!-- Top -->
+
+          <div class="p-8 text-center">
+
+            <img src="assets/img/course/master.png" class="h-48 mx-auto transition duration-500 group-hover:scale-110"
+              alt="Master Package">
+
+            <h3 class="text-3xl font-bold text-white mt-8">
+
+              Master Package
+
+            </h3>
+
+            <div class="flex justify-center mt-3 text-yellow-300">
+
+              ★★★★★
+
+            </div>
+
+            <p class="text-emerald-100 mt-2">
+
+              520+ Students
+
+            </p>
+
+          </div>
+
+          <!-- Skills -->
+
+          <div class="px-8">
+
+            <div class="flex flex-wrap justify-center gap-2">
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                AI Mastery
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Full Stack
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Automation
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Video Editing
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Graphic Design
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                SEO
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- Bottom -->
+
+          <div class="p-8">
+
+            <div class="flex justify-between items-center">
+
+              <div>
+
+                <span class="line-through text-emerald-200">
+
+                  ₹10,999
+
+                </span>
+
+                <h3 class="text-4xl font-bold text-white">
+
+                  ₹6,000
+
+                </h3>
+
+              </div>
+
+              <a href="#"
+                class="bg-white text-emerald-700 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-white transition">
+
+                Enroll Now →
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- ================= GRAND MASTER PACKAGE ================= -->
+
+        <div
+          class="group rounded-3xl overflow-hidden bg-gradient-to-br from-amber-500 via-orange-500 to-red-600 shadow-2xl transition duration-500 hover:-translate-y-4 hover:shadow-orange-500/20">
+
+          <!-- Top -->
+
+          <div class="p-8 text-center">
+
+            <img src="assets/img/course/grand-master.png"
+              class="h-48 mx-auto transition duration-500 group-hover:scale-110" alt="Grand Master Package">
+
+            <h3 class="text-3xl font-bold text-white mt-8">
+
+              Grand Master Package
+
+            </h3>
+
+            <div class="flex justify-center mt-3 text-yellow-300">
+
+              ★★★★★
+
+            </div>
+
+            <p class="text-orange-100 mt-2">
+
+              350+ Students
+
+            </p>
+
+          </div>
+
+          <!-- Skills -->
+
+          <div class="px-8">
+
+            <div class="flex flex-wrap justify-center gap-2">
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                AI & ML
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                SaaS Development
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Startup
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Business
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Marketing
+              </span>
+
+              <span class="px-3 py-1 bg-white/20 rounded-full text-white text-sm">
+                Lifetime Support
+              </span>
+
+            </div>
+
+          </div>
+
+          <!-- Bottom -->
+
+          <div class="p-8">
+
+            <div class="flex justify-between items-center">
+
+              <div>
+
+                <span class="line-through text-orange-200">
+
+                  ₹18,999
+
+                </span>
+
+                <h3 class="text-4xl font-bold text-white">
+
+                  ₹10,800
+
+                </h3>
+
+              </div>
+
+              <a href="#"
+                class="bg-white text-orange-600 px-6 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-white transition">
+
+                Enroll Now →
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =======================================================
+                WHY CHOOSE GROWNEXTWORLD
+======================================================= -->
+
+  <section class="py-24 bg-[#0B1120] relative overflow-hidden">
+
+    <!-- Background Effects -->
+    <div class="absolute -top-32 left-0 w-96 h-96 bg-cyan-500/10 blur-[160px] rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-600/10 blur-[160px] rounded-full"></div>
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Heading -->
+
+      <div class="text-center mb-16">
+
+        <span
+          class="inline-block px-5 py-2 rounded-full bg-cyan-500/10 border border-cyan-400/20 text-cyan-400 font-semibold">
+
+          WHY CHOOSE US
+
+        </span>
+
+        <h2 class="text-4xl lg:text-5xl font-bold text-white mt-5">
+
+          Why Students Love
+          <span class="text-cyan-400">
+            GrowNextWorld
+          </span>
+
+        </h2>
+
+        <p class="text-gray-400 mt-5 max-w-3xl mx-auto">
+
+          We don't just teach skills—we help you build a successful career
+          through practical learning, expert mentorship, and real-world projects.
+
+        </p>
+
+      </div>
+
+      <!-- Cards -->
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Card -->
+
+        <div
+          class="bg-white/5 border border-white/10 rounded-3xl p-8 transition duration-500 hover:border-cyan-400 hover:-translate-y-3">
+
+          <div
+            class="w-16 h-16 rounded-2xl bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-3xl mb-6">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-white">
+
+            Expert Mentors
+
+          </h3>
+
+          <p class="text-gray-400 mt-4 leading-8">
+
+            Learn directly from industry professionals with practical experience.
+
+          </p>
+
+        </div>
+
+        <!-- Card -->
+
+        <div
+          class="bg-white/5 border border-white/10 rounded-3xl p-8 transition duration-500 hover:border-cyan-400 hover:-translate-y-3">
+
+          <div
+            class="w-16 h-16 rounded-2xl bg-purple-500/20 flex items-center justify-center text-purple-400 text-3xl mb-6">
+
+            <i class="fa-solid fa-laptop-code"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-white">
+
+            Practical Projects
+
+          </h3>
+
+          <p class="text-gray-400 mt-4 leading-8">
+
+            Build real-world websites, applications, AI projects, and digital products.
+
+          </p>
+
+        </div>
+
+        <!-- Card -->
+
+        <div
+          class="bg-white/5 border border-white/10 rounded-3xl p-8 transition duration-500 hover:border-cyan-400 hover:-translate-y-3">
+
+          <div
+            class="w-16 h-16 rounded-2xl bg-pink-500/20 flex items-center justify-center text-pink-400 text-3xl mb-6">
+
+            <i class="fa-solid fa-certificate"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-white">
+
+            Certification
+
+          </h3>
+
+          <p class="text-gray-400 mt-4 leading-8">
+
+            Receive industry-recognized certificates after course completion.
+
+          </p>
+
+        </div>
+
+        <!-- Card -->
+
+        <div
+          class="bg-white/5 border border-white/10 rounded-3xl p-8 transition duration-500 hover:border-cyan-400 hover:-translate-y-3">
+
+          <div
+            class="w-16 h-16 rounded-2xl bg-orange-500/20 flex items-center justify-center text-orange-400 text-3xl mb-6">
+
+            <i class="fa-solid fa-briefcase"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-white">
+
+            Career Support
+
+          </h3>
+
+          <p class="text-gray-400 mt-4 leading-8">
+
+            Resume building, interview preparation, internships, and placement assistance.
+
+          </p>
+
+        </div>
+
+        <!-- Card -->
+
+        <div
+          class="bg-white/5 border border-white/10 rounded-3xl p-8 transition duration-500 hover:border-cyan-400 hover:-translate-y-3">
+
+          <div
+            class="w-16 h-16 rounded-2xl bg-green-500/20 flex items-center justify-center text-green-400 text-3xl mb-6">
+
+            <i class="fa-solid fa-infinity"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-white">
+
+            Lifetime Access
+
+          </h3>
+
+          <p class="text-gray-400 mt-4 leading-8">
+
+            Enjoy lifetime access to course recordings, updates, and learning materials.
+
+          </p>
+
+        </div>
+
+        <!-- Card -->
+
+        <div
+          class="bg-white/5 border border-white/10 rounded-3xl p-8 transition duration-500 hover:border-cyan-400 hover:-translate-y-3">
+
+          <div class="w-16 h-16 rounded-2xl bg-red-500/20 flex items-center justify-center text-red-400 text-3xl mb-6">
+
+            <i class="fa-solid fa-headset"></i>
+
+          </div>
+
+          <h3 class="text-2xl font-bold text-white">
+
+            Lifetime Community
+
+          </h3>
+
+          <p class="text-gray-400 mt-4 leading-8">
+
+            Join our exclusive student community for networking, mentorship, and continuous support.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =====================================================
+                ACHIEVEMENT COUNTER SECTION
+====================================================== -->
+
+  <section
+    class="relative py-16 md:py-20 lg:py-24 overflow-hidden bg-gradient-to-r from-[#0B1120] via-[#0B1120] to-[#161B22]">
+
+    <!-- Background Glow -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-[180px]"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-[180px]"></div>
+
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
+
+        <!-- Happy Students -->
+
+        <div
+          class="group bg-gradient-to-br from-purple-600 to-violet-700 rounded-2xl lg:rounded-3xl p-6 lg:p-8 text-center shadow-xl transition-all duration-500 hover:-translate-y-3 hover:shadow-purple-500/40">
+
+          <div
+            class="w-16 h-16 lg:w-20 lg:h-20 mx-auto rounded-full bg-white/10 flex items-center justify-center text-white text-3xl lg:text-4xl mb-5">
+
+            <i class="fa-solid fa-thumbs-up"></i>
+
+          </div>
+
+          <h2 class="text-4xl lg:text-5xl font-bold text-white">
+
+            <span class="counter">1856</span>+
+
+          </h2>
+
+          <p class="mt-3 text-sm lg:text-lg text-purple-100">
+
+            Happy Students
+
+          </p>
+
+        </div>
+
+        <!-- Community Earnings -->
+
+        <div
+          class="group bg-[#1B2035] border border-white/10 rounded-2xl lg:rounded-3xl p-6 lg:p-8 text-center transition-all duration-500 hover:border-cyan-400 hover:-translate-y-3 hover:bg-[#202742]">
+
+          <div
+            class="w-16 h-16 lg:w-20 lg:h-20 mx-auto rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-3xl lg:text-4xl mb-5">
+
+            <i class="fa-solid fa-sack-dollar"></i>
+
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
+
+            ₹<span class="counter">5600000</span>+
+
+          </h2>
+
+          <p class="mt-3 text-sm lg:text-lg text-gray-300">
+
+            Community Earnings
+
+          </p>
+
+        </div>
+
+        <!-- Courses -->
+
+        <div
+          class="group bg-[#1B2035] border border-white/10 rounded-2xl lg:rounded-3xl p-6 lg:p-8 text-center transition-all duration-500 hover:border-cyan-400 hover:-translate-y-3 hover:bg-[#202742]">
+
+          <div
+            class="w-16 h-16 lg:w-20 lg:h-20 mx-auto rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-3xl lg:text-4xl mb-5">
+
+            <i class="fa-solid fa-book-open"></i>
+
+          </div>
+
+          <h2 class="text-4xl lg:text-5xl font-bold text-white">
+
+            <span class="counter">25</span>+
+
+          </h2>
+
+          <p class="mt-3 text-sm lg:text-lg text-gray-300">
+
+            Professional Courses
+
+          </p>
+
+        </div>
+
+        <!-- Teachers -->
+
+        <div
+          class="group bg-[#1B2035] border border-white/10 rounded-2xl lg:rounded-3xl p-6 lg:p-8 text-center transition-all duration-500 hover:border-cyan-400 hover:-translate-y-3 hover:bg-[#202742]">
+
+          <div
+            class="w-16 h-16 lg:w-20 lg:h-20 mx-auto rounded-full bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-3xl lg:text-4xl mb-5">
+
+            <i class="fa-solid fa-chalkboard-user"></i>
+
+          </div>
+
+          <h2 class="text-4xl lg:text-5xl font-bold text-white">
+
+            <span class="counter">7</span>+
+
+          </h2>
+
+          <p class="mt-3 text-sm lg:text-lg text-gray-300">
+
+            Expert Teachers
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =====================================================
+                STUDENT TESTIMONIALS
+====================================================== -->
+
+  <section class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-r from-[#0B1120] via-[#14142D] to-[#2A1245]">
+
+    <!-- Background Blur -->
+
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-[180px]"></div>
+
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-purple-600/10 rounded-full blur-[180px]"></div>
+
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative">
+
+      <!-- Heading -->
+
+      <div class="text-center mb-16">
+
+        <span
+          class="inline-block px-5 py-2 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 font-semibold uppercase tracking-widest text-sm">
+
+          Student Reviews
+
+        </span>
+
+        <h2 class="text-4xl md:text-5xl font-bold text-white mt-5">
+
+          What Our Students Say
+
+        </h2>
+
+        <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
+
+          Thousands of students have transformed their careers with GrowNextWorld.
+
+        </p>
+
+      </div>
+
+      <!-- Swiper -->
+
+      <div class="swiper testimonialSwiper">
+
+        <div class="swiper-wrapper">
+
+          <!-- Review 1 -->
+
+          <div class="swiper-slide">
+
+            <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 lg:p-12">
+
+              <div class="text-6xl text-purple-500 mb-6">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+              </div>
+
+              <p class="text-gray-300 text-lg leading-9">
+
+                GrowNextWorld has completely changed my life.
+                I learned Digital Marketing and started earning
+                commissions within a few months. The mentors
+                explained everything clearly with practical examples.
+
+              </p>
+
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between mt-10">
+
+                <div class="flex items-center gap-4">
+
+                  <img src="assets/img/testimonial/student1.jpg"
+                    class="w-16 h-16 rounded-full object-cover border-2 border-cyan-400">
+
+                  <div>
+
+                    <h4 class="text-white font-bold text-xl">
+
+                      Amit Sharma
+
+                    </h4>
+
+                    <p class="text-cyan-400">
+
+                      Digital Marketing Student
+
+                    </p>
+
+                    <div class="text-yellow-400 mt-2">
+
+                      ★★★★★
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Review 2 -->
+
+          <div class="swiper-slide">
+
+            <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 lg:p-12">
+
+              <div class="text-6xl text-purple-500 mb-6">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+              </div>
+
+              <p class="text-gray-300 text-lg leading-9">
+
+                The Full Stack Development course was amazing.
+                I built multiple real-world projects and landed my
+                first internship. Highly recommended for beginners.
+
+              </p>
+
+              <div class="flex items-center gap-4 mt-10">
+
+                <img src="assets/img/testimonial/student2.jpg"
+                  class="w-16 h-16 rounded-full object-cover border-2 border-cyan-400">
+
+                <div>
+
+                  <h4 class="text-white font-bold text-xl">
+
+                    Priya Das
+
+                  </h4>
+
+                  <p class="text-cyan-400">
+
+                    Full Stack Developer
+
+                  </p>
+
+                  <div class="text-yellow-400 mt-2">
+
+                    ★★★★★
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Review 3 -->
+
+          <div class="swiper-slide">
+
+            <div class="bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 lg:p-12">
+
+              <div class="text-6xl text-purple-500 mb-6">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+              </div>
+
+              <p class="text-gray-300 text-lg leading-9">
+
+                I joined the AI & Automation program and now
+                I'm building my own SaaS products. The support
+                from mentors is simply outstanding.
+
+              </p>
+
+              <div class="flex items-center gap-4 mt-10">
+
+                <img src="assets/img/testimonial/student3.jpg"
+                  class="w-16 h-16 rounded-full object-cover border-2 border-cyan-400">
+
+                <div>
+
+                  <h4 class="text-white font-bold text-xl">
+
+                    Rahul Verma
+
+                  </h4>
+
+                  <p class="text-cyan-400">
+
+                    AI Developer
+
+                  </p>
+
+                  <div class="text-yellow-400 mt-2">
+
+                    ★★★★★
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Navigation -->
+
+        <div class="flex justify-center lg:justify-end items-center gap-5 mt-10">
+
+          <div
+            class="testimonial-prev w-14 h-14 rounded-full bg-white text-black flex items-center justify-center cursor-pointer hover:bg-cyan-400 transition">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+          </div>
+
+          <div
+            class="testimonial-next w-14 h-14 rounded-full bg-white text-black flex items-center justify-center cursor-pointer hover:bg-cyan-400 transition">
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= SWIPER JS ================= -->
+
+  <script>
+    new Swiper(".heroSwiper", {
+
+      loop: true,
+
+      speed: 1000,
+
+      effect: "fade",
+
+      autoplay: {
+
+        delay: 5000,
+
+        disableOnInteraction: false,
+
+      },
+
+      navigation: {
+
+        nextEl: ".swiper-button-next",
+
+        prevEl: ".swiper-button-prev",
+
+      }
+
+    });
+  </script>
+
+  <script>
+
+    var swiper = new Swiper(".testimonialSwiper", {
+
+      slidesPerView: 1,
+
+      spaceBetween: 30,
+
+      loop: true,
+
+      speed: 900,
+
+      autoplay: {
+
+        delay: 5000,
+
+        disableOnInteraction: false,
+
+      },
+
+      pagination: {
+
+        el: ".swiper-pagination",
+
+        clickable: true,
+
+      },
+
+      navigation: {
+
+        nextEl: ".testimonial-next",
+
+        prevEl: ".testimonial-prev",
+
+      },
+
+    });
+
+  </script>
+
+  <script>
+    $(document).ready(function () {
+
+      $('.counter').counterUp({
+
+        delay: 15,
+        time: 2000,
+        repeat: false
+
+      });
+
+    });
+  </script>
+
+
+  <script src="./assets/js/menu.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
