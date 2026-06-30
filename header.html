@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- favicon -->
+
+  <!-- favicon end -->
+
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Waypoints -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <!-- Counter Up -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  <title>Grownextworld Pvt Ltd - Home</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gnBlue: '#00AEEF',
+            gnBlueDark: '#007DB8',
+            gnBlueLight: '#33C3F5',
+            gnDark: '#1A1A1A',
+            gnDarker: '#111111',
+            gnGray: '#2A2A2A',
+            gnCard: '#1E2530',
+            gnBorder: '#2E3A48',
+            gnText: '#B0C4D8',
+          },
+          fontFamily: {
+            display: ['Orbitron', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            heading: ['Space Grotesk', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* change the scrollbar color */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #33C3F5;
+    }
+
+    ::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Arrow button to top -->
+  <div id="arrowBtn" class="hidden fixed bottom-10 right-10 z-50">
+    <button onclick="scrollToTop()"
+      class="bg-gradient-to-r from-gnBlue to-cyan-400 text-white px-5 py-3 rounded-full font-semibold shadow-lg hover:scale-105 hover:shadow-cyan-500/40 transition duration-300">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+
+  <header class="fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4">
+      <nav
+        class="bg-[#161B22]/95 backdrop-blur-xl border border-white/10 rounded-2xl px-8 py-3 shadow-2xl flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3">
+
+          <img src="./assets/img/logo/main_logo.png"
+            class="h-14 object-contain transition duration-300 hover:scale-105">
+
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden lg:flex items-center gap-10">
+
+          <li>
+            <a href="index.html" class="relative text-white font-medium hover:text-gnBlue transition group">
+              Home
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-gnBlue transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html" class="relative text-white font-medium hover:text-gnBlue transition group">
+              About
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-gnBlue transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li class="relative group">
+
+            <a href="./packages.html"
+              class="flex items-center gap-2 text-white font-medium hover:text-gnBlue transition">
+
+              Packages
+
+              <i class="fa-solid fa-chevron-down text-xs group-hover:rotate-180 transition duration-300"></i>
+
+            </a>
+
+            <!-- Dropdown -->
+            <div
+              class="absolute left-0 mt-6 w-56 bg-[#161B22]/95 backdrop-blur-xl rounded-xl shadow-2xl border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+
+              <a href="#"
+                class="block px-5 py-3 text-gray-300 hover:text-white hover:bg-gnBlue/20 rounded-t-xl transition">
+                Basic Package
+              </a>
+
+              <a href="#" class="block px-5 py-3 text-gray-300 hover:text-white hover:bg-gnBlue/20 transition">
+                Advance Package
+              </a>
+
+              <a href="#" class="block px-5 py-3 text-gray-300 hover:text-white hover:bg-gnBlue/20 transition">
+                Pro Package
+              </a>
+
+              <a href="#"
+                class="block px-5 py-3 text-gray-300 hover:text-white hover:bg-gnBlue/20 rounded-b-xl transition">
+                Master Package
+              </a>
+
+            </div>
+
+          </li>
+
+          <li>
+            <a href="blog.html" class="relative text-white font-medium hover:text-gnBlue transition group">
+              Blog
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-gnBlue transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="relative text-white font-medium hover:text-gnBlue transition group">
+              Contact
+              <span
+                class="absolute left-0 -bottom-1 w-0 h-0.5 bg-gnBlue transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- Right Buttons -->
+        <div class="hidden lg:flex items-center gap-5">
+
+          <a href="login.html" class="text-white font-medium hover:text-gnBlue transition">
+            Login
+          </a>
+
+          <a href="register.html"
+            class="bg-gradient-to-r from-gnBlue to-cyan-400 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 hover:shadow-cyan-500/40 transition duration-300">
+
+            Get Started
+
+          </a>
+
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn" class="lg:hidden text-white text-2xl">
+
+          <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu"
+        class="hidden lg:hidden mt-3 bg-[#161B22]/95 backdrop-blur-xl rounded-2xl border border-white/10 shadow-xl">
+
+        <a href="index.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          Home
+        </a>
+
+        <a href="about.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          About
+        </a>
+
+        <a href="packages.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          Packages
+        </a>
+
+        <a href="blog.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          Blog
+        </a>
+
+        <a href="contact.html" class="block px-6 py-4 text-white hover:bg-gnBlue/20 transition">
+          Contact
+        </a>
+
+        <div class="px-6 py-5">
+
+          <a href="login.html"
+            class="block text-center bg-gradient-to-r from-gnBlue to-cyan-400 rounded-full py-3 font-semibold text-white">
+
+            Login
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </header>
